@@ -1,6 +1,17 @@
-# ZMK Module Template
+# ZMK Spongelock Behavior
 
-This repository contains a template for a ZMK module, as it would most frequently be used. 
+This repository contains a behavior for spongelock/sarcasm. Entirely based on PR #1099 
+
+New behavior, inspired by https://www.reddit.com/r/funny/comments/scykg9/i_built_a_sarcasm_converter_for_my_keyboard_to/
+
+Toggled on/off w/ &spongelock
+
+WORKs LIke tHis wheN aCTivE.
+
+Cribbed most of the &caps_word logic for this.
+
+See https://youtu.be/wfsQ4tNFS8I for it in action.
+ 
 
 ## Usage
 
