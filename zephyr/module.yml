@@ -1,7 +1,6 @@
 name: zmk-behaviour-spongelock
 build:
   depends:
-    - zmk-example-dependency
   cmake: .
   kconfig: Kconfig
   settings:
