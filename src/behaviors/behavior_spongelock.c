@@ -75,7 +75,7 @@ ZMK_SUBSCRIPTION(behavior_spongelock, zmk_keycode_state_changed);
 
 static const struct device *devs[DT_NUM_INST_STATUS_OKAY(DT_DRV_COMPAT)];
 
-static bool sarcasm_is_alpha(uint8_t usage_id) {
+static bool spongelock_is_alpha(uint8_t usage_id) {
     return (usage_id >= HID_USAGE_KEY_KEYBOARD_A && usage_id <= HID_USAGE_KEY_KEYBOARD_Z);
 }
 
@@ -85,7 +85,7 @@ static void spongelock_enhance_usage(const struct behavior_spongelock_config *co
         return;
     }
 
-    LOG_DBG("Enhancing usage 0x%02X with sarcasm", ev->keycode);
+    LOG_DBG("Enhancing usage 0x%02X with spongelock", ev->keycode);
     ev->implicit_modifiers |= MOD_LSFT;
 }
 
